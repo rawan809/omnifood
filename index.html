@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<!-- d-flex flex-lg-row flex-column -->
+
+<body>
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="img/omnifood-logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center gap-4">
+            <li class="nav-item">
+              <a class="nav-link active fw-bolder" aria-current="page" href="#">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="#">Meals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="last-link fw-bolder" href="#">Try for free</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home row align-items-center">
+
+    <div
+      class="col-lg home-text d-flex flex-column gap-5 align-items-lg-start align-items-center text-lg-start text-center">
+      <h1 class="fw-bolder display-5 h-primary">A healthy meal delivered to your door, every single day</h1>
+      <p class="fs-2">
+        The smart 365-days-per-year food subscription that will make you eat
+        healthy again. Tailored to your personal tastes and nutritional needs.
+      </p>
+      <div class="home-btn d-flex">
+        <button class="start-eat-btn">Start eating well</button>
+        <button class="btn2">Learn more ↓</button>
+      </div>
+      <div class="home-meal d-flex align-items-center">
+        <div class="meal-cust d-flex">
+          <img class="rounded-circle" src="img/customers/customer-1.jpg" alt="" />
+          <img class="rounded-circle" src="img/customers/customer-2.jpg" alt="" />
+          <img class="rounded-circle" src="img/customers/customer-3.jpg" alt="" />
+          <img class="rounded-circle" src="img/customers/customer-4.jpg" alt="" />
+          <img class="rounded-circle" src="img/customers/customer-5.jpg" alt="" />
+          <img class="rounded-circle" src="img/customers/customer-6.jpg" alt="" />
+        </div>
+        <div class="meal-text">
+          <p><span>250,000+</span> meals delivered last year!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg home-img align-items-center justify-content-center d-flex">
+      <img class="img-fluid" src="img/hero.png" alt="" />
+    </div>
+  </section>
+
+  <section class="feature text-center">
+    <h2 class="fs-4 text-uppercase mb-4">As featured in</h2>
+    <div class="feature-img-box d-flex justify-content-around">
+      <img src="img/logos/techcrunch.png" alt="" />
+      <img src="img/logos/business-insider.png" alt="" />
+      <img src="img/logos/the-new-york-times.png" alt="" />
+      <img src="img/logos/forbes.png" alt="" />
+      <img src="img/logos/usa-today.png" alt="" />
+    </div>
+  </section>
+
+  <section class="mobile-section">
+    <div class="how-it-work heading">
+      <h2>How it works</h2>
+      <p class="display-4">Your daily dose of health in 3 simple steps</p>
+    </div>
+    <div class="mobile row row-cols-1 row-cols-md-2">
+      <!-- one -->
+
+      <div class="mob-text col one">
+        <h2>01</h2>
+        <h3>Tell us what you like (and what not)</h3>
+        <p>
+          Never again waste time thinking about what to eat! Omnifood AI will
+          create a 100% personalized weekly meal plan just for you. It makes
+          sure you get all the nutrients and vitamins you need, no matter what
+          diet you follow!
+        </p>
+      </div>
+      <div class="mob-img col d-flex justify-content-center align-items-center two">
+        <img src="img/app/app-screen-1.png" alt="" />
+      </div>
+      <!-- two -->
+      <div class="mob-img col d-flex justify-content-center align-items-center three">
+        <img src="img/app/app-screen-2.png" alt="" />
+      </div>
+      <div class="mob-text col four">
+        <h2>02</h2>
+        <h3>Approve your weekly meal plan</h3>
+        <p>
+          Once per week, approve the meal plan generated for you by Omnifood
+          AI. You can change ingredients, swap entire meals, or even add your
+          own recipes.
+        </p>
+      </div>
+      <!-- three -->
+      <div class="mob-text col five">
+        <h2>03</h2>
+        <h3>Receive meals at convenient time</h3>
+        <p>
+          Best chefs in town will cook your selected meal every day, and we
+          will deliver it to your door whenever works best for you. You can
+          change delivery schedule and address daily!
+        </p>
+      </div>
+      <div class="mob-img col  d-flex justify-content-center align-items-center six">
+        <img src="img/app/app-screen-3.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodulesrc="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="test.js"></script>
+</body>
+
+</html>
