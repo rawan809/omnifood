@@ -37,19 +37,19 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center gap-4">
             <li class="nav-item">
-              <a class="nav-link active fw-bolder" aria-current="page" href="#">How it works</a>
+              <a class="nav-link active fw-bolder" aria-current="page" href="#mobile">How it works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="#">Meals</a>
+              <a class="nav-link fw-bolder" href="#meal">Meals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="#">Testimonials</a>
+              <a class="nav-link fw-bolder" href="#gal">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="#">Pricing</a>
+              <a class="nav-link fw-bolder" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="last-link fw-bolder" href="#">Try for free</a>
+              <a class="last-link fw-bolder" href="#order">Try for free</a>
             </li>
           </ul>
         </div>
@@ -57,11 +57,11 @@
     </div>
   </nav>
 
-  <section class="home row align-items-center">
+  <section class="home row align-items-center m-0">
 
     <div
       class="col-lg home-text d-flex flex-column gap-5 align-items-lg-start align-items-center text-lg-start text-center">
-      <h1 class="fw-bolder display-5 h-primary">A healthy meal delivered to your door, every single day</h1>
+      <h1 class="fw-bolder display-4 h-primary">A healthy meal delivered to your door, every single day</h1>
       <p class="fs-2">
         The smart 365-days-per-year food subscription that will make you eat
         healthy again. Tailored to your personal tastes and nutritional needs.
@@ -100,10 +100,10 @@
     </div>
   </section>
 
-  <section class="mobile-section">
+  <section id="mobile" class="mobile-section">
     <div class="how-it-work heading">
       <h2>How it works</h2>
-      <p class="display-4">Your daily dose of health in 3 simple steps</p>
+      <h3 class="display-5 fw-bolder">Your daily dose of health in 3 simple steps</h3>
     </div>
     <div class="mobile row row-cols-1 row-cols-md-2">
       <!-- one -->
@@ -150,12 +150,343 @@
     </div>
   </section>
 
+  <section id="meal" class="meals-section">
+    <div class="section-meals heading text-center">
+      <h2>Meals</h2>
+      <h3 class="display-5 fw-bolder">Omnifood AI chooses from 5,000+ recipes</h3>
+    </div>
+    <div class="section-diet row row-cols-md-3 row-cols-sm-2 justify-content-lg-between justify-content-center gy-5">
+      <div class="col-md-4">
+        <div class="diet-meal shadow">
+          <img src="img/meals/meal-1.jpg" alt="" />
+          <div class="diet-text p-5">
+            <div class="diet-tag d-flex">
+              <span class="sp Vegetarian">Vegetarian</span>
+            </div>
+            <p class="fw-bolder">Japanese Gyozas</p>
+            <ul class="true-false p-0 fs-4">
+              <li>
+                <ion-icon name="flame-outline"></ion-icon>
+                <span class="fw-bolder me-2">650</span> calories
+              </li>
+              <li>
+                <ion-icon name="restaurant-outline"></ion-icon>
+                NutriScore ®<span class="fw-bolder mx-2">74</span>
+              </li>
+              <li>
+                <ion-icon name="star-outline"></ion-icon>
+                <span class="fw-bolder me-2">4.9</span>rating (537)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="diet-meal shadow">
+          <img src="img/meals/meal-2.jpg" alt="" />
+          <div class="diet-text p-5">
+            <div class="diet-tag d-flex">
+              <span class="sp Vegan">Vegan</span>
+              <span class="sp Paleo">Paleo</span>
+            </div>
+            <p class="fw-bolder">Avocado Salad</p>
+            <ul class="true-false p-0 fs-4">
+              <li>
+                <ion-icon name="flame-outline"></ion-icon>
+                <span class="fw-bolder me-2">400</span> calories
+              </li>
+              <li>
+                <ion-icon name="restaurant-outline"></ion-icon>
+                NutriScore®<span class="fw-bolder mx-2">92</span>
+              </li>
+              <li>
+                <ion-icon name="star-outline"></ion-icon>
+                <span class="fw-bolder me-2">4.8</span>rating (441)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="work-with d-flex flex-column align-items-lg-start align-items-center">
+          <h3 class="mb-5 fw-bolder">Works with any diet:</h3>
+          <ul class="true-false p-0">
+            <li><ion-icon name="checkmark-outline"></ion-icon>Vegetarian</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Vegan</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Pescatarian</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Gluten-free</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Lactose-free</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Keto</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Paleo</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Low FODMAP</li>
+            <li><ion-icon name="checkmark-outline"></ion-icon>Kid-friendly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="link-container">
+      <a href="">See all recipes →</a>
+    </div>
+  </section>
+
+  <section id="gal" class="gal-section">
+    <div class="row">
+      <div class="gallery-content col-lg-7 d-flex flex-column justify-content-center mb-5">
+        <div class="heading">
+          <h2>Testimonials</h2>
+          <h3 class="display-6 fw-bolder">Once you try it, you can't go back</h3>
+        </div>
+        <div class="gallery-cust row g-5">
+          <div class="cust col-sm-6">
+            <img class="mb-4" src="img/customers/dave.jpg" alt="" />
+            <p class="fs-4">
+              Inexpensive, healthy and great-tasting meals, without even having
+              to order manually! It feels truly magical.
+            </p>
+            <p class="fs-4 text-muted">— Dave Bryson</p>
+          </div>
+          <div class="cust col-sm-6">
+            <img class="mb-4" src="img/customers/ben.jpg" alt="" />
+            <p class="fs-4">
+              The AI algorithm is crazy good, it chooses the right meals for me
+              every time. It's amazing not to worry about food anymore!
+            </p>
+            <p class="fs-4 text-muted">— Ben Hadley</p>
+          </div>
+          <div class="cust col-sm-6">
+            <img class="mb-4" src="img/customers/steve.jpg" alt="" />
+            <p class="fs-4">
+              Omnifood is a life saver! I just started a company, so there's no
+              time for cooking. I couldn't live without my daily meals now!
+            </p>
+            <p class="fs-4 text-muted">— Steve Miller</p>
+          </div>
+          <div class="cust col-sm-6">
+            <img class="mb-4" src="img/customers/hannah.jpg" alt="" />
+            <p class="fs-4">
+              I got Omnifood for the whole family, and it frees up so much time!
+              Plus, everything is organic and vegan and without plastic.
+            </p>
+            <p class="fs-4 text-muted">— Hannah Smith</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-img-box col-lg-5">
+        <div class="row g-0 gap-3 justify-content-lg-end justify-content-between">
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-1.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-2.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-3.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-4.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-5.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-6.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-7.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-8.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-9.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-10.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-11.jpg" alt="" />
+          </div>
+          <div class="img-item col-lg-6 col-sm-2 col-3">
+            <img src="img/gallery/gallery-12.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing-section">
+    <div class="heading">
+      <h2>Pricing</h2>
+      <h3 class="display-5 fw-bolder">Eating well without breaking the bank</h3>
+    </div>
+    <div class="pricing row justify-content-center gap-5">
+      <div class="starter col-lg-4 col-sm-5 col-11 text-center">
+        <h3 class="fw-bolder mb-4">Starter</h3>
+        <p class="display-2 fw-bold"><span class="fs-1 fw-medium">$</span>399</p>
+        <p class="text-muted fs-5 mb-5">per month. That's just $13 per meal!</p>
+        <ul class="true-false p-0 pt-5 fs-4">
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>1 meal per day
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>Order from 11am to
+            9pm
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>Delivery is free
+          </li>
+          <li><ion-icon name="close-outline"></ion-icon></li>
+        </ul>
+        <button class="start-eat-btn mt-5">Start eating well</button>
+      </div>
+      <div class="complete col-lg-4 col-sm-5 col-11 text-center">
+        <h3 class="fw-bolder mb-4">Complete</h3>
+        <p class="display-2 fw-bold"><span class="fs-1 fw-medium">$</span>649</p>
+        <p class="text-muted fs-5 mb-5">per month. That's just $11 per meal!</p>
+        <ul class="true-false p-0 pt-5 fs-4">
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <span>2 meals</span> per day
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>Order
+            <span>24/7</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>Delivery is free
+          </li>
+          <li>
+            <ion-icon name="checkmark-outline"></ion-icon>Get access to latest
+            recipes
+          </li>
+        </ul>
+        <button class="start-eat-btn mt-5">Start eating well</button>
+      </div>
+    </div>
+    <p class="per text-center mt-5 fs-4">
+      Prices include all applicable taxes. You can cancel at any time. Both
+      plans include the following:
+    </p>
+  </section>
+
+  <section class="f-section">
+    <div class="row g-5">
+      <div class="feture col-lg-3 col-sm-6 d-flex flex-column gap-3 ">
+        <ion-icon name="infinite-outline"></ion-icon>
+        <h3>Never cook again!</h3>
+        <p class="fs-4">
+          Our subscriptions cover 365 days per year, even including major
+          holidays.
+        </p>
+      </div>
+      <div class="feture col-lg-3 col-sm-6 d-flex flex-column gap-3">
+        <ion-icon name="nutrition-outline"></ion-icon>
+        <h3>Local and organic</h3>
+        <p class="fs-4">
+          Our cooks only use local, fresh, and organic products to prepare
+          your meals.
+        </p>
+      </div>
+      <div class="feture col-lg-3 col-sm-6 d-flex flex-column gap-3">
+        <ion-icon name="leaf-outline"></ion-icon>
+        <h3>No waste</h3>
+        <p class="fs-4">
+          All our partners only use reusable containers to package all your
+          meals.
+        </p>
+      </div>
+      <div class="feture col-lg-3 col-sm-6 d-flex flex-column gap-3">
+        <ion-icon name="pause-outline"></ion-icon>
+        <h3>Pause anytime</h3>
+        <p class="fs-4">
+          Going on vacation? Just pause your subscription, and we refund
+          unused days.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order-section">
+    <div class="container overflow-hidden">
+      <div class="row">
+        <div class="order col-md-7 order-md-1 order-2">
+          <h2 class="display-6 fw-bolder mb-5">Get your first meal for free!</h2>
+          <p class="fs-4 mb-5">
+            Healthy, tasty and hassle-free meals are waiting for you. Start
+            eating well today. You can cancel or pause anytime. And the first
+            meal is on us!
+          </p>
+          <div class="input pt-3 row justify-content-between g-5">
+            <div class="d-flex gap-2 flex-column col-lg-6">
+              <label for="name" class="fs-4 fw-bold">Full Name </label>
+              <input type="text" id="name" class="py-4 px-3" placeholder="John Smith" />
+            </div>
+            <div class="d-flex gap-2 flex-column col-lg-6">
+              <label for="em" class="fs-4 fw-bold">Email address </label>
+              <input class="py-4 px-3" type="email" id="em" placeholder="me@exanple.com" />
+            </div>
+            <div class="d-flex gap-2 flex-column col-lg-6">
+              <label for="op" class="fs-4 fw-bold">Where did you hear from us? </label>
+              <select class="py-4 px-3 fs-4" id="op">
+                <option value="any">Please choose one option</option>
+              </select>
+            </div>
+            <div class="o-btn col-lg-6 align-self-end">
+              <button class="sign-btn w-100 py-4 px-3">Sign up now</button>
+            </div>
+          </div>
+        </div>
+        <div class="order-img col-md-5 order-md-2 order-1"></div>
+      </div>
+    </div>
+  </section>
 
 
-
-
-
-
+  <footer class="p-5 mt-5">
+    <div class="foot-cont py-5 row justify-content-between row-gap-5">
+      <div class="f1 col-md-2 col-5 d-flex flex-column justify-content-between">
+        <div>
+          <a href="#top">
+            <img class="logo" src="img/omnifood-logo.png" alt="" />
+          </a>
+        </div>
+        <!-- <div class="social-links"></div> -->
+        <p class="fs-6">Copyright © 2027 by Omnifood, Inc. All rights reserved.</p>
+      </div>
+      <div class="f2 col-md-2 col-5">
+        <p class="foot-head">Contact us</p>
+        <p class="fs-5 mb-4">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+        <a class="fs-5 mb-2 d-block" href="">415-201-6370</a>
+        <a class="fs-5" href="">hello@omnifood.com</a>
+      </div>
+      <div class="f3 col-md-2 col-3">
+        <p class="foot-head fs-4">Account</p>
+        <ul class="p-0 d-flex flex-column gap-4">
+          <li><a class="fs-5" href="">Create account</a></li>
+          <li><a class="fs-5" href="">Sign in</a></li>
+          <li><a class="fs-5" href="">iOS app</a></li>
+          <li><a class="fs-5" href="">Android app</a></li>
+        </ul>
+      </div>
+      <div class="f4 col-md-2 col-3">
+        <p class="foot-head fs-4">Company</p>
+        <ul class="p-0 d-flex flex-column gap-4">
+          <li><a class="fs-5" href="">About Omnifood</a></li>
+          <li><a class="fs-5" href="">For Business</a></li>
+          <li><a class="fs-5" href="">Cooking partners</a></li>
+          <li><a class="fs-5" href="">Careers</a></li>
+        </ul>
+      </div>
+      <div class="f5 col-md-2 col-3">
+        <p class="foot-head fs-4">Resources</p>
+        <ul class="p-0 d-flex flex-column gap-4">
+          <li><a class="fs-5" href="">Recipe directory</a></li>
+          <li><a class="fs-5" href="">Help center</a></li>
+          <li><a class="fs-5" href="">Privacy & terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodulesrc="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="test.js"></script>

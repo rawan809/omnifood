@@ -39,6 +39,12 @@ button {
     transition: background-color 0.2s;
 }
 
+input,
+select {
+    outline: none;
+    border: none;
+}
+
 p {
     line-height: 1.5;
     font-size: 2rem;
@@ -56,9 +62,7 @@ p {
         margin-bottom: 2rem;
     }
 
-    p {
-        font-size: 4rem;
-        font-weight: 600;
+    h3 {
         color: #333;
     }
 }
@@ -72,17 +76,19 @@ p {
     background-color: #cf711f;
 }
 
-.true-false{
+.true-false {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    ion-icon{
+
+    ion-icon {
         color: #e67e22;
         font-size: 2.4rem;
         margin-right: 1rem;
     }
-    li{
+
+    li {
         display: flex;
         align-items: center;
     }
@@ -153,7 +159,6 @@ nav {
 .home {
     background-color: #fdf2e9;
     gap: 4.8rem;
-    max-width: 130rem;
 }
 
 .home-btn {
@@ -196,7 +201,6 @@ nav {
 
 @media screen and (max-width:992px) {
     .home {
-        max-width: 115rem;
         gap: 6.4rem;
     }
 
@@ -212,6 +216,13 @@ nav {
 
     .home-meal {
         margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home-meal {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -243,6 +254,10 @@ nav {
 @media screen and (max-width:600px) {
     .feature-img-box img {
         height: 1rem;
+    }
+
+    .feature-img-box {
+        flex-wrap: wrap;
     }
 }
 
@@ -336,6 +351,7 @@ nav {
 
     .mob-text {
         line-height: 1;
+
         h2 {
             font-size: 6rem;
         }
@@ -345,20 +361,273 @@ nav {
 /* end mobile*/
 
 /* start meal */
+.diet-meal img {
+    width: 100%;
+}
 
+.diet-meal {
+    border-radius: 11px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
 
+.diet-meal:hover {
+    transform: translateY(-1.5rem);
+}
 
+.work-with h3 {
+    color: #333;
+}
+
+.diet-tag {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    gap: 0.4rem;
+    color: #333;
+
+    .sp {
+        padding: 2px 7px;
+        border-radius: 13px;
+    }
+
+    .Vegetarian {
+        background-color: #51cf66;
+    }
+
+    .Vegan {
+        background-color: #94d82d;
+    }
+
+    .Paleo {
+        background-color: #ffd43b;
+    }
+}
+
+.link-container {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+
+    a {
+        position: relative;
+        color: #e67e22;
+    }
+}
+
+.link-container a::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 0.7px;
+    background-color: #e67e22;
+    bottom: -2px;
+    transition: opacity 0.5s;
+}
+
+a:hover::before {
+    opacity: 0;
+}
 
 
 /* end meal */
 
+/* start gallery */
+.gal-section {
+    background-color: #fdf2e9;
+}
 
+.gallery-img-box .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
 
+.gallery-img-box .img-item {
+    overflow: hidden;
+    width: 40%;
+}
 
+.gallery-img-box .img-item:hover img {
+    transform: scale(1.1);
+}
 
+.gallery-cust .cust img {
+    width: 6.4rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:992px) {
+    .gallery-img-box .img-item {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gallery-img-box .img-item {
+        width: 22%;
+    }
+}
+
+/* end gallery */
+
+/* start pricing */
+.starter,
+.complete {
+    border-radius: 11px;
+    padding: 4.8rem;
+}
+
+.starter h3,
+.complete h3 {
+    color: #e67e22;
+}
+
+.starter .display-2,
+.complete .display-2 {
+    color: #333;
+}
+
+.starter {
+    border: #fdf2e9 solid 2px;
+}
+
+.complete {
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.complete::before {
+    content: "BEST VALUE";
+    position: absolute;
+    background-color: #ffd43b;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+    top: 25px;
+    right: -85px;
+}
+
+/* end pricing */
+
+/* start f */
+.feture {
+    ion-icon {
+        color: #e67e22;
+        font-size: 4rem;
+        background-color: #fdf2e9;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: #333;
+    }
+
+    p {
+        line-height: 2;
+    }
+}
+
+/* end f */
+
+/* start oredr */
+.order-section .container {
+    background-color: #e67e22;
+    border-radius: 11px;
+}
+
+.order {
+    color: #45260a;
+    padding: 4rem 6rem;
+    p {
+        line-height: 1.5;
+    }
+}
+
+.order-img {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../img/eating.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.input input,
+.input select {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.785);
+}
+
+.input input::placeholder ,select {
+    font-size: 1.5rem;
+    color: #33333392;
+}
+
+.sign-btn {
+    background-color: #45260a;
+    color: white;
+}
+
+.sign-btn:hover {
+    background-color: white;
+    color: #45260a;
+}
+@media screen and (max-width:768px) {
+    .order-img{
+        height: 22rem;
+    }
+    .order{
+        padding: 2rem 3rem;
+    }
+}
+/* end order */
+
+/* start footer */
+
+footer{
+    color: #767676;
+    border-top: 1px solid #eee;
+    a{
+        font-size: 1.6rem;
+        color: #767676;
+    }
+}
+
+.foot-head{
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 3.2rem; 
+}
+@media screen and (max-width:768px) {
+    .f1{
+        order: 4;
+    }
+    .f2{
+        order: 5;
+    }
+    .f3{
+        order: 1;
+    }
+    .f4{
+        order: 2;
+    }
+    .f5{
+        order: 3;
+    }
+}
+
+/* end footer */
 
 
 @media screen and (max-width:600px) {
+    section {
+        padding: 4.8rem 2rem;
+    }
+
     button {
         padding: 0.9rem 1rem;
         font-size: 1.5rem;
